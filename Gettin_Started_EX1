@@ -1,0 +1,40 @@
+• Where does the output go?
+-The output is sent to standard output, using System.out.println();
+• In object-oriented terms, what kind of thing is HelloJava? main? What is the type of args?
+-HelloJava would be considered a class of which of which it is an instance of.
+-main out be considered a method of the class
+-args is a String array, utilized in holding arguments/data when the program is run passed by the system/user running it.  Much in the way in c/c++ main uses int arc, char** 	argv.
+• What do you suppose System.out refers to?
+-System refers to a class in the java.lang that connects the JVM print stream to the native output, stdout, of the system it is running on.
+-out is a static member of the class, type PrintStream, used for streaming data to the output console.
+
+• Where does “Hello, Java!” appear now?
+-In the task bar of the frame opened.
+• What type does frame appear to have? Name two of frame's methods.
+- frame is an instance of the Jframe class.
+	setSize() and setVisible are two of the class methods that are implemented in the current lines of code.
+• When the program runs, what does frame correspond to?
+-frame corresponds to the instance of the class being the console window that appears.
+
+• Now where does “Hello, Java!” appear?
+-It appears in both the windows top bar and the center of  it.
+• Has the type of frame changed?
+-No it has not.
+• What do you suppose the import statement does? (These are related questions.)
+-The import statement utilizes the keyword import followed by a class path which signals to the JVM where to find packages, either user defined or part of the API, to the Java source file that contains the statement.
+• Translate the line frame.getContentPane().add(label); into English.
+-frame refers to the instance of the Jframe class
+-.getContentPane is the invocation of a method to find/add the content pane of the top level container, being the Jframe object. 	
+-.add(label) is a method  inherited to the Jframe class from the container class that adds the child jlabel object into the contentPane of frame.
+
+**this refers to only the last 15 lines of code, not all 47**
+
+• How many classes does this program define?
+-2 HelloJava and HelloComponent
+• How many main() methods does it define?
+-1
+• In addition to the defined classes, what classes are used in this program?
+-Jframe, Graphics
+• In object-oriented terms, what is the relationship between HelloComponent andJComponent? What do you suppose the three parameters of drawString() are for?
+-HelloComponent is a subclass of the superclass to it JComponent
+-The three parameters are the string to be draw, the x coordinate and then y coordinate in which to draw the string in the contentPane
